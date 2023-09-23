@@ -1,0 +1,6 @@
+Pytorch:
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+Executing Command:
+python detect.py --weights yolov7-w6-pose.pt --kpt-label --hide-labels --hide-conf --source videosample.mp4 --line-thickness 8 --nosave --view-img
+
+python detect.py --data data/coco_kpts.yaml --img 960 --conf 0.001 --iou 0.65 --weights yolov7-w6-pose.pt --kpt-label
